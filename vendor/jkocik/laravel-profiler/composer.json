@@ -1,0 +1,45 @@
+{
+    "name": "jkocik/laravel-profiler",
+    "description": "Profiler for Laravel framework 5.2+",
+    "keywords": ["laravel", "profiler", "debugbar"],
+    "homepage": "https://github.com/jkocik/laravel-profiler",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Janusz Kocik",
+            "email": "janusz.kocik@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": "^5.0 || ^6.0"
+    },
+    "require-dev": {
+        "laravel/homestead": "^7.3",
+        "phpunit/phpunit": "^6.5",
+        "mockery/mockery": "^1.0",
+        "php-mock/php-mock": "^2.0",
+        "fzaninotto/faker": "^1.8",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "JKocik\\Laravel\\Profiler\\": "src/"
+        },
+        "files": [
+            "src/Services/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JKocik\\Laravel\\Profiler\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JKocik\\Laravel\\Profiler\\ServiceProvider"
+            ]
+        }
+    }
+}

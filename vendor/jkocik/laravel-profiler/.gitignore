@@ -1,0 +1,7 @@
+/.vagrant
+/client
+/coverage
+/frameworks
+/vendor
+Homestead.yaml
+composer.lock
